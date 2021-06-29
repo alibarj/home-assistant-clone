@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-string num_cstr(STRING(1234));
+
 
 // Change the credentials below, so your ESP8266 connects to your router
 const char* ssid = "Zikas";
