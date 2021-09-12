@@ -15,3 +15,6 @@ The vocal assistant part is coded in Python, we've used various open source pack
 * [paho-mqtt](https://github.com/eclipse/paho.mqtt.python) that provides a client class which enable applications to connect to an MQTT broker to publish messages, and to subscribe to topics and receive published messages (more on MQTT later).
 ### Arduino
 The esp8266 microcontrollers are programed using the standard API known as the Arduino language. The programs in these microcontrollers are responsible of establishing the connection with the MQTT broker, publish and subscribe to MQTT topics, and control their respective sensors and actuators based on the messages in these topics.
+### MQTT
+MQTT is a lightweight network protocol that wirelessly transports messages between devices. The MQTT protocol defines two types of entities, a broker and clients.
+The MQTT broker is a server (we used our local machine) that receives all messages from the clients and then routes the messages to the appropriate destination clients. An MQTT client is any device, from a micro controller up to a fully-fledged server (LEDs, tempretature sensor, and a small actuator in our case), that runs an MQTT library and connects to an MQTT broker over a network.
